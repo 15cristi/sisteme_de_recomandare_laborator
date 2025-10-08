@@ -2,7 +2,7 @@
 
 Acest proiect implementează un sistem de recomandare bazat pe conținut pentru mașini, utilizând API-ul Recombee și un dataset real de vehicule preluat de pe Kaggle
 
-#Descriere
+# Descriere
 
 Proiectul demonstrează cum pot fi importate date reale despre mașini într-o bază de date Recombee pentru a genera recomandări personalizate
 

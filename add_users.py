@@ -20,7 +20,8 @@ user_properties = [
     ('city', 'string'),
     ('budget', 'double'),
     ('fuel_preference', 'string'),
-    ('transmission_preference', 'string')
+    ('transmission_preference', 'string'),
+    ('preferred_seller', 'string')
 ]
 
 # Adaugare proprietati in Recombee
@@ -59,7 +60,9 @@ for idx, row in df.iterrows():
                 "city": row['city'],
                 "budget": float(row['budget']),
                 "fuel_preference": row['fuel_preference'],
-                "transmission_preference": row['transmission_preference']
+                "transmission_preference": row['transmission_preference'],
+                "preferred_seller": row['preferred_seller']
+
             },
             cascade_create=True
         ))

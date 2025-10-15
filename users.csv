@@ -1,31 +1,51 @@
-id,first_name,last_name,age,city,budget,fuel_preference,transmission_preference
-00001,Andrei,Popescu,29,București,10000,Diesel,Manual
-00002,Maria,Ionescu,35,Cluj-Napoca,12000,Petrol,Automatic
-00003,Vlad,Dumitrescu,42,Timișoara,8000,Diesel,Manual
-00004,Ioana,Marin,31,Brașov,15000,Hybrid,Automatic
-00005,George,Petrescu,27,Iași,7000,Petrol,Manual
-00006,Elena,Stan,24,Constanța,9000,Diesel,Manual
-00007,Robert,Mihai,38,Sibiu,20000,Electric,Automatic
-00008,Alina,Iliescu,33,Bacău,11000,Petrol,Automatic
-00009,Daniel,Stoica,45,Craiova,8500,Diesel,Manual
-00010,Alexandra,Enache,30,Pitești,9500,Hybrid,Automatic
-00011,Paul,Radu,28,Ploiești,10500,Petrol,Manual
-00012,Irina,Voicu,40,Galați,13000,Diesel,Automatic
-00013,Florin,Popa,36,Oradea,12500,Diesel,Manual
-00014,Laura,Sandu,26,Arad,8000,Petrol,Automatic
-00015,Mihai,Barbu,34,Brăila,11000,Diesel,Manual
-00016,Denisa,Pop,22,Suceava,9500,Petrol,Manual
-00017,Cristian,Moldovan,41,Bistrița,14000,Hybrid,Automatic
-00018,Adela,Toma,37,Satu Mare,16000,Electric,Automatic
-00019,Victor,Neagu,32,Alba Iulia,10000,Diesel,Manual
-00020,Teodora,Georgescu,25,Târgu Mureș,9000,Petrol,Automatic
-00021,Adrian,Dragomir,39,Deva,12500,Diesel,Manual
-00022,Silvia,Ciobanu,29,Tulcea,10000,Petrol,Automatic
-00023,Ciprian,Voinea,44,Focșani,15500,Hybrid,Automatic
-00024,Larisa,Dobre,27,Râmnicu Vâlcea,9500,Diesel,Manual
-00025,Valentin,Bălan,31,Botoșani,11000,Petrol,Manual
-00026,Oana,Mureșan,33,Reșița,12000,Diesel,Automatic
-00027,Emil,Cozma,37,Baia Mare,14500,Hybrid,Automatic
-00028,Monica,Diaconu,24,Târgu Jiu,8500,Petrol,Manual
-00029,Răzvan,Stanciu,40,Piatra Neamț,13000,Diesel,Manual
-00030,Simona,Filip,26,Giurgiu,9000,Petrol,Automatic
+id,first_name,last_name,age,city,budget,fuel_preference,transmission_preference,preferred_seller
+00001,Andrei,Popescu,29,Bucuresti,850000,Diesel,Manual,Individual
+00002,Maria,Ionescu,35,Cluj-Napoca,1200000,Petrol,Automatic,Dealer
+00003,Vlad,Dumitrescu,42,Timisoara,450000,Diesel,Manual,Individual
+00004,Ioana,Marin,31,Brasov,2000000,Hybrid,Automatic,Dealer
+00005,George,Petrescu,27,Iasi,600000,Petrol,Manual,Individual
+00006,Elena,Stan,24,Constanta,750000,Diesel,Manual,Individual
+00007,Robert,Mihai,38,Sibiu,5000000,Electric,Automatic,Dealer
+00008,Alina,Iliescu,33,Bacau,950000,Petrol,Automatic,Dealer
+00009,Daniel,Stoica,45,Craiova,700000,Diesel,Manual,Individual
+00010,Alexandra,Enache,30,Pitesti,1100000,Hybrid,Automatic,Dealer
+00011,Paul,Radu,28,Ploiesti,800000,Petrol,Manual,Individual
+00012,Irina,Voicu,40,Galati,1400000,Diesel,Automatic,Dealer
+00013,Florin,Popa,36,Oradea,1000000,Diesel,Manual,Individual
+00014,Laura,Sandu,26,Arad,750000,Petrol,Automatic,Individual
+00015,Mihai,Barbu,34,Braila,950000,Diesel,Manual,Dealer
+00016,Denisa,Pop,22,Suceava,600000,Petrol,Manual,Individual
+00017,Cristian,Moldovan,41,Bistrita,1800000,Hybrid,Automatic,Dealer
+00018,Adela,Toma,37,Satu Mare,3200000,Electric,Automatic,Dealer
+00019,Victor,Neagu,32,Alba Iulia,900000,Diesel,Manual,Individual
+00020,Teodora,Georgescu,25,Targu Mures,850000,Petrol,Automatic,Individual
+00021,Adrian,Dragomir,39,Deva,1100000,Diesel,Manual,Dealer
+00022,Silvia,Ciobanu,29,Tulcea,900000,Petrol,Automatic,Dealer
+00023,Ciprian,Voinea,44,Focsani,2500000,Hybrid,Automatic,Dealer
+00024,Larisa,Dobre,27,Ramnicu Valcea,950000,Diesel,Manual,Individual
+00025,Valentin,Balan,31,Botosani,1000000,Petrol,Manual,Individual
+00026,Oana,Muresan,33,Resita,1200000,Diesel,Automatic,Dealer
+00027,Emil,Cozma,37,Baia Mare,2700000,Hybrid,Automatic,Dealer
+00028,Monica,Diaconu,24,Targu Jiu,700000,Petrol,Manual,Individual
+00029,Razvan,Stanciu,40,Piatra Neamt,1300000,Diesel,Manual,Dealer
+00030,Simona,Filip,26,Giurgiu,850000,Petrol,Automatic,Individual
+00031,Lucian,Petcu,43,Bucuresti,4200000,Diesel,Automatic,Dealer
+00032,Anca,Voinea,28,Cluj-Napoca,1600000,Hybrid,Automatic,Dealer
+00033,Costin,Enescu,35,Brasov,950000,Petrol,Manual,Individual
+00034,Mirela,Sima,30,Constanta,1300000,Diesel,Manual,Dealer
+00035,Octavian,Dima,38,Sibiu,3500000,Electric,Automatic,Dealer
+00036,Corina,Tudor,24,Ploiesti,600000,Petrol,Manual,Individual
+00037,Ionut,Alexandrescu,41,Iasi,1750000,Diesel,Manual,Dealer
+00038,Mihaela,Georgescu,33,Craiova,2500000,Hybrid,Automatic,Dealer
+00039,Radu,Preda,29,Timisoara,900000,Petrol,Manual,Individual
+00040,Nicoleta,Moraru,31,Oradea,3100000,Electric,Automatic,Dealer
+00041,Petre,Iacob,48,Braila,90000,Petrol,Manual,Individual
+00042,Mariana,Vlad,52,Bacau,120000,Diesel,Manual,Individual
+00043,Gabriel,Pop,27,Targoviste,150000,Petrol,Manual,Individual
+00044,Anisoara,Dumitru,34,Galati,60000,Petrol,Manual,Individual
+00045,Nicolae,Tanase,45,Suceava,95000,Diesel,Manual,Individual
+00046,Elisabeta,Serban,29,Botosani,80000,Petrol,Manual,Individual
+00047,Mircea,Cristea,39,Braila,100000,Diesel,Manual,Individual
+00048,Valeriu,Petrescu,41,Iasi,150000,Petrol,Manual,Individual
+00049,Georgiana,Neacsu,25,Cluj-Napoca,70000,Petrol,Manual,Individual
+00050,Claudiu,Stanescu,33,Pitesti,180000,Diesel,Manual,Individual

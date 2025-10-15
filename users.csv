@@ -1,0 +1,31 @@
+id,first_name,last_name,age,city,budget,fuel_preference,transmission_preference
+00001,Andrei,Popescu,29,București,10000,Diesel,Manual
+00002,Maria,Ionescu,35,Cluj-Napoca,12000,Petrol,Automatic
+00003,Vlad,Dumitrescu,42,Timișoara,8000,Diesel,Manual
+00004,Ioana,Marin,31,Brașov,15000,Hybrid,Automatic
+00005,George,Petrescu,27,Iași,7000,Petrol,Manual
+00006,Elena,Stan,24,Constanța,9000,Diesel,Manual
+00007,Robert,Mihai,38,Sibiu,20000,Electric,Automatic
+00008,Alina,Iliescu,33,Bacău,11000,Petrol,Automatic
+00009,Daniel,Stoica,45,Craiova,8500,Diesel,Manual
+00010,Alexandra,Enache,30,Pitești,9500,Hybrid,Automatic
+00011,Paul,Radu,28,Ploiești,10500,Petrol,Manual
+00012,Irina,Voicu,40,Galați,13000,Diesel,Automatic
+00013,Florin,Popa,36,Oradea,12500,Diesel,Manual
+00014,Laura,Sandu,26,Arad,8000,Petrol,Automatic
+00015,Mihai,Barbu,34,Brăila,11000,Diesel,Manual
+00016,Denisa,Pop,22,Suceava,9500,Petrol,Manual
+00017,Cristian,Moldovan,41,Bistrița,14000,Hybrid,Automatic
+00018,Adela,Toma,37,Satu Mare,16000,Electric,Automatic
+00019,Victor,Neagu,32,Alba Iulia,10000,Diesel,Manual
+00020,Teodora,Georgescu,25,Târgu Mureș,9000,Petrol,Automatic
+00021,Adrian,Dragomir,39,Deva,12500,Diesel,Manual
+00022,Silvia,Ciobanu,29,Tulcea,10000,Petrol,Automatic
+00023,Ciprian,Voinea,44,Focșani,15500,Hybrid,Automatic
+00024,Larisa,Dobre,27,Râmnicu Vâlcea,9500,Diesel,Manual
+00025,Valentin,Bălan,31,Botoșani,11000,Petrol,Manual
+00026,Oana,Mureșan,33,Reșița,12000,Diesel,Automatic
+00027,Emil,Cozma,37,Baia Mare,14500,Hybrid,Automatic
+00028,Monica,Diaconu,24,Târgu Jiu,8500,Petrol,Manual
+00029,Răzvan,Stanciu,40,Piatra Neamț,13000,Diesel,Manual
+00030,Simona,Filip,26,Giurgiu,9000,Petrol,Automatic

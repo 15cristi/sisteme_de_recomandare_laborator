@@ -12,6 +12,8 @@ Proiectul demonstrează cum pot fi importate date reale despre mașini într-o b
 - Încarcă fiecare mașină ca un item unic (0001, 0002, ...).
 - Atribuie fiecărui item proprietăți descriptive (year, price, fuel, seller_type, etc.).
 - Atribuie fiecarui utilizator proprietati precum nume, oras, buget si preferinte.
+- Fișierul `tesco_sample.json` conține datele (produsele) folosite pentru calculul similarității.
+
 
 ## Fisierele proiectului:
 
@@ -22,3 +24,5 @@ Proiectul demonstrează cum pot fi importate date reale despre mașini într-o b
 - database.py – Scriptul care incarca datele + proprietatile despre masini in Recombee.
 
 - add_users.py – Scriptul care incarca utilizatorii + proprietatile in Recombee.
+
+- Scriptul `CosineSimilarity.py` realizează recomandări content-based prin calculul similarității cosine dintre descrierile produselor.

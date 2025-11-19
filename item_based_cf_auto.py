@@ -2,9 +2,9 @@ import pandas as pd
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 
-# ---------------------------
-# 1. ÎNCĂRCAREA ȘI CURĂȚAREA DATELOR
-# ---------------------------
+
+# incarcare date
+
 print("1. Se încarcă datele...")
 try:
     users_df = pd.read_csv('users.csv')
@@ -13,7 +13,7 @@ except FileNotFoundError:
     print("Eroare: Fișierele users.csv sau car_data.csv lipsesc.")
     exit()
 
-# Curățare string-uri
+# curatare text
 cols_to_strip_users = ['fuel_preference', 'transmission_preference', 'preferred_seller']
 for col in cols_to_strip_users:
     users_df[col] = users_df[col].str.strip()
@@ -22,20 +22,20 @@ cols_to_strip_cars = ['name', 'fuel', 'transmission', 'seller_type']
 for col in cols_to_strip_cars:
     cars_df[col] = cars_df[col].str.strip()
 
-# Eliminarea duplicatelor (inclusiv seller_type)
+# elim duplicatelor
 initial_count = len(cars_df)
 cars_df.drop_duplicates(subset=['name', 'year', 'selling_price', 'km_driven', 'fuel', 'transmission', 'seller_type'], inplace=True)
 print(f"   Au fost eliminate {initial_count - len(cars_df)} mașini duplicate. Ramase: {len(cars_df)}")
 
 cars_df.reset_index(drop=True, inplace=True)
-# Mărim subsetul la 300 sau scoatem limita (.head()) dacă calculatorul permite
+
 cars_subset = cars_df.head(300).copy() 
 n_users = len(users_df)
 n_items = len(cars_subset)
 
-# ---------------------------
-# 2. GENERAREA MATRICEI (PONDERARE AGRESIVĂ PE SELLER)
-# ---------------------------
+
+# gen matricei
+
 user_item_matrix = np.zeros((n_users, n_items))
 print("2. Se generează matricea de preferințe...")
 
@@ -47,27 +47,27 @@ for u_idx, user in users_df.iterrows():
     
     for c_idx, car in cars_subset.iterrows():
         score = 0
-        # 1. Buget (+1)
+        
         if car['selling_price'] <= u_budget:
             score = 2 
             
-            # 2. Combustibil (+3) - Punctaj mare
+           
             if car['fuel'] == u_fuel:
                 score += 3
             
-            # 3. Transmisie (+4) - Punctaj și mai mare
+           
             if car['transmission'] == u_trans:
                 score += 4
             
-            # 4. Vânzător (+5) - CEL MAI MARE PUNCTAJ
+            
             if car['seller_type'] == u_seller:
                 score += 5
                 
         user_item_matrix[u_idx, c_idx] = score
 
-# ---------------------------
-# 3. ALGORITMUL
-# ---------------------------
+
+# algoritm simi
+
 print("3. Se calculează similitudinea...")
 item_similarity = cosine_similarity(user_item_matrix.T)
 
@@ -80,16 +80,16 @@ def recommend_items(user_id_index, matrix, similarity, top_k=5):
         scores = scores / sum_similarity.flatten()
         scores = np.nan_to_num(scores)
     
-    # Eliminăm doar ce e complet nepotrivit
+    # eliminam doar ce e complet nepotrivit
     scores[user_ratings == 0] = -1
     
     top_indices = np.argsort(scores)[::-1][:top_k]
     return top_indices, scores
 
-# ---------------------------
-# 4. REZULTATE PENTRU ALINA
-# ---------------------------
-target_user_idx = 7 # Alina
+
+# rezultate users
+
+target_user_idx = 7 
 target_user = users_df.iloc[target_user_idx]
 
 recom_indices, all_scores = recommend_items(target_user_idx, user_item_matrix, item_similarity, top_k=5)
@@ -112,7 +112,7 @@ with open("README2.txt", "w", encoding="utf-8") as f:
         
         lines_to_print = [
             f"{i+1}. {car['name']} ({car['year']})",
-            f"   Preț: {car['selling_price']} | {car['fuel']} | {car['transmission']} | {car['seller_type']}",
+            f"   Pret: {car['selling_price']} | {car['fuel']} | {car['transmission']} | {car['seller_type']}",
             f"   Scor Compatibilitate: {score:.4f}",
             "-" * 40
         ]

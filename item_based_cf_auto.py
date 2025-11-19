@@ -53,7 +53,7 @@ for u_idx, user in users_df.iterrows():
             
            
             if car['fuel'] == u_fuel:
-                score += 3
+                score += 1
             
            
             if car['transmission'] == u_trans:
@@ -89,7 +89,7 @@ def recommend_items(user_id_index, matrix, similarity, top_k=5):
 
 # rezultate users
 
-target_user_idx = 7 
+target_user_idx = 7
 target_user = users_df.iloc[target_user_idx]
 
 recom_indices, all_scores = recommend_items(target_user_idx, user_item_matrix, item_similarity, top_k=5)
